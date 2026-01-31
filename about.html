@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>awaiaune｜About</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+      font-family: "Noto Serif JP", serif;
+      line-height: 2.1;
+      letter-spacing: 0.04em;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 120px 24px 160px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 64px;
+      letter-spacing: 0.08em;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 1.4s ease, transform 1.4s ease;
+    }
+
+    .fade.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .spacer {
+      height: 80px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 96px 20px 120px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2 class="fade">awaiauneについて</h2>
+
+    <p class="fade">
+      awaiaune は、<br>
+      ひとつの活動やブランドというより、<br>
+      ある「生き方」や「姿勢」に近いものです。
+    </p>
+
+    <p class="fade">
+      人は、<br>
+      植物のように根を張る代わりに、<br>
+      目には見えない「音」のようなものを<br>
+      発しているのかもしれません。
+    </p>
+
+    <p class="fade">
+      それは、意識や、想い、<br>
+      あるいは、愛と呼ばれるもの。
+    </p>
+
+    <p class="fade">
+      静かな湖に石を投げると、<br>
+      波紋がゆっくりと広がっていくように。
+    </p>
+
+    <div class="spacer"></div>
+
+    <p class="fade">
+      人と自然のあいだに立つこと。</br>
+      何かが芽吹く気配に気づくこと。</br>
+      植物とともに過ごすこと。
+    </p>
+
+    <p class="fade">
+      そうした一つひとつの行為が、<br>
+      誰かの内側に届き、<br>
+      自然が本来もっている<br>
+      豊かな循環を思い出す<br>
+      きっかけになればと考えています。
+    </p>
+
+    <div class="spacer"></div>
+
+    <p class="fade">
+      私たちが未来へ残していけるものは、<br>
+      人工的につくられた仕組みや、<br>
+      消費を前提とした労働の場だけでは<br>
+      ないはずです。
+    </p>
+
+    <p class="fade">
+      自然がもともと備えている、<br>
+      見返りを求めず、<br>
+      誰も拒まず、<br>
+      ただ巡り続ける<br>
+      「無償の循環」。
+    </p>
+
+    <p class="fade">
+      季節の果実が実り、<br>
+      ハーブや野菜が育ち、<br>
+      そこにいるだけで、<br>
+      何かが満たされていくような環境。
+    </p>
+
+    <p class="fade">
+      そうした在り方そのものを、<br>
+      未来への贈り物として<br>
+      残していけたらと思っています。
+    </p>
+
+    <div class="spacer"></div>
+
+    <p class="fade">
+      種が蒔かれ、<br>
+      波紋が生まれ、<br>
+      やがて、どこかで<br>
+      また別の循環へとつながっていく。
+    </p>
+
+    <p class="fade">
+      人と人。<br>
+      人と自然。
+    </p>
+
+    <p class="fade">
+      そのあいだにある<br>
+      あわい（awai）に気づき、<br>
+      出会い（au）が生まれ、<br>
+      めぐり続けていく<br>
+      循環（ne）。
+    </p>
+
+    <p class="fade">
+      その流れを指して、<br>
+      awaiaune という名前を使っています。
+    </p>
+
+<div class="spacer"></div>
+
+    <p style="font-size:9px; letter-spacing:0.12em; opacity:0.6;">
+      Between people and nature,<br>
+      a quiet cycle begins.
+    </p>
+
+    <div class="spacer"></div>
+
+    
+      <a href="index.html"
+         style="font-size:12px; letter-spacing:0.14em; opacity:0.45; text-decoration:none;">
+        ← Return to awaiaune
+      </a>
+  </div>
+
+<!-- footer copyright -->
+<div
+  style="
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: #9ca3af; /* Tailwind text-neutral-400 相当 */
+    opacity: 0.4;
+    pointer-events: none;
+  "
+>
+  ©awaiaune 2025
+</div>
+
+
+
+  <script>
+    const fades = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    fades.forEach(el => observer.observe(el));
+  </script>
+
+
+</body>
+</html>
