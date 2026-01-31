@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>awaiaune</title>
+
+  <!-- Basic Meta -->
+  <meta name="description" content="awaiaune is a quiet hub of ongoing projects. Planting seeds, creating ripples, and weaving cycles between people and nature." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://awaiaune.github.io/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="awaiaune" />
+  <meta property="og:description" content="Planting seeds, creating ripples, and weaving cycles between people and nature." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://awaiaune.github.io/" />
+  <meta property="og:image" content="https://awaiaune.github.io/ogp.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'serif'],
+            base: ['system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 0.8s ease forwards; }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+  </style>
+</head>
+
+<body
+  class="min-h-screen font-base
+         bg-gradient-to-b from-white to-[#f7f4ef]
+         text-neutral-900 transition-colors duration-700"
+>
+
+<!-- wrapper -->
+<div
+  id="wrapper"
+  class="relative min-h-screen flex flex-col items-center gap-12
+         pt-[12vh]
+         max-h-screen overflow-hidden
+         [@media(max-height:700px)]:pt-[6vh]
+         [@media(max-height:700px)]:gap-8
+         [@media(max-height:700px)]:scale-90"
+>
+
+  <!-- center -->
+  <div
+    id="center"
+    class="text-center transition-opacity duration-500 mt-[18vh]
+           [@media(max-height:700px)]:mt-[10vh]"
+  >
+    <div
+      class="font-display font-light
+             whitespace-nowrap
+             max-w-full
+             overflow-hidden
+             text-[clamp(4.8rem,9vw,8rem)]
+             tracking-[0.22em]
+             translate-x-[0.18em]
+             [@media(max-width:420px)]:scale-95
+             [@media(max-width:360px)]:scale-90
+             [@media(max-height:700px)]:text-[clamp(2.3rem,5vw,4.8rem)]"
+    >
+      awaiau<span class="inline-block ml-[0.03em]">n</span><span class="inline-block ml-[0.09em]">e</span>
+    </div>
+
+    <div
+      class="mt-1 text-base opacity-60 tracking-wide
+             [@media(max-height:700px)]:mt-2.5"
+    >
+      種を蒔き、波紋を起こし、<br>
+      人と自然のあいだに、循環をつくる。
+    </div>
+  </div>
+
+</div>
+
+<!-- menu -->
+<div
+  id="menu"
+  class="fixed inset-0
+         bg-black/80 backdrop-blur-md
+         opacity-0 pointer-events-none
+         transition-opacity duration-500"
+>
+
+  <!-- ✅ スクロール専用レイヤー -->
+  <div class="absolute inset-0 overflow-y-auto overscroll-contain">
+
+    <div
+      class="flex justify-center px-6
+             py-[clamp(5rem,10vh,9rem)]
+             [@media(max-height:700px)]:py-14"
+    >
+    <ul
+  class="w-full max-w-4xl space-y-14 text-white
+         pt-[clamp(3rem,13vh,6rem)] pb-24"
+>
+
+        <li class="opacity-0 animate-fadeIn">
+          <a href="https://m.youtube.com/@kominka25" class="group block">
+            <div class="font-display font-light text-2xl tracking-widest">
+              <span class="border-b border-white/30 group-hover:border-white transition">
+                komĪnka
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed opacity-60 max-w-xl">
+              暮らしをつくる。
+            </p>
+          </a>
+        </li>
+
+        <li class="opacity-0 animate-fadeIn delay-100">
+          <a href="#" class="group block">
+            <div class="font-display font-light text-2xl tracking-widest">
+              <span class="border-b border-white/30 group-hover:border-white transition">
+                rawb
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed opacity-60 max-w-xl">
+              ありのままのハーブを。
+            </p>
+          </a>
+        </li>
+
+        <li class="opacity-0 animate-fadeIn delay-200">
+          <a href="https://www.etsy.com/shop/awaremono" class="group block">
+            <div class="font-display font-light text-2xl tracking-widest">
+              <span class="border-b border-white/30 group-hover:border-white transition">
+                awaremono
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed opacity-60 max-w-xl">
+              時を超え、想いを循環させる。
+            </p>
+          </a>
+        </li>
+
+        <li class="opacity-0 animate-fadeIn delay-300">
+          <a href="https://awaiaune.github.io/hazeundayz/" class="group block">
+            <div class="font-display font-light text-2xl tracking-widest">
+              <span class="border-b border-white/30 group-hover:border-white transition">
+                HAZEUNDAYZ
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed opacity-60 max-w-xl">
+              非日常が漂う日常を。
+            </p>
+          </a>
+        </li>
+
+        <li class="opacity-0 animate-fadeIn delay-300 pt-28 text-center">
+          <a href="about.html" class="group block">
+            <div class="font-display font-light text-xl tracking-widest opacity-80">
+              <span class="border-b border-white/30 group-hover:border-white transition">
+                About awaiaune
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed opacity-50 max-w-xl mx-auto">
+              awaiauneとは何か。<br>
+              なぜ種を蒔き、循環をつくろうとしているのか。
+            </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- footer hint -->
+
+<div
+  id="footerHint"
+  class="fixed bottom-10 left-0 right-0
+         text-center text-xs tracking-widest
+         text-neutral-500 transition-opacity duration-700
+         pointer-events-none opacity-50" 
+>
+  画面に触れると、ひらきます
+</div>
+
+
+
+<!-- footer copyright -->
+
+
+<div
+  class="fixed bottom-4 left-0 right-0
+         text-center text-[10px] tracking-widest
+         text-neutral-400 opacity-40
+         pointer-events-none"
+>
+  ©awaiaune 2025
+</div>
+
+
+<script>
+const menu       = document.getElementById("menu");
+const footerHint = document.getElementById("footerHint");
+
+let isMenuOpen = false;
+
+function openMenu() {
+  isMenuOpen = true;
+  menu.classList.remove("opacity-0", "pointer-events-none");
+  // 文字だけを完全に消す
+  footerHint.style.opacity = "0"; 
+}
+
+function closeMenu() {
+  isMenuOpen = false;
+  menu.classList.add("opacity-0", "pointer-events-none");
+  // 文字を元の薄さ(0.5)に戻す
+  footerHint.style.opacity = "0.5";
+}
+
+// 画面全体へのクリック
+document.addEventListener("click", (e) => {
+  if (!isMenuOpen) {
+    openMenu();
+  } else {
+    // メニューが開いている時に、メニューの外側や背景をクリックしたら閉じる
+    // aタグをクリックした時は閉じないようにガード
+    if (!e.target.closest('a')) {
+      closeMenu();
+    }
+  }
+});
+
+// メニュー自体のクリックが「画面全体」に伝わって即座に閉じないようにする
+menu.addEventListener("click", (e) => {
+  // aタグ以外をクリックした時だけ閉じる処理へ
+  if (!e.target.closest('a')) {
+    // ここでstopPropagationをあえて使わず、上のdocument側の処理に任せるか
+    // あるいはここで完結させる
+  } else {
+    e.stopPropagation(); // リンククリック時はイベントを止める
+  }
+});
+
+</script>
+
+</body>
+</html>
